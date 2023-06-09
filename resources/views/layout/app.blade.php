@@ -18,11 +18,11 @@
         <span class="fs-4">Proyecto</span>
       </a>
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
+        <li class="nav-item"><a href="/proyectos" class="nav-link active" aria-current="page">Inicio</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown" aria-expanded="true">Mantenimiento</a>
           <ul class="dropdown-menu " aria-labelledby="dropdown09" data-bs-popper="none">
-            <li><a class="dropdown-item" href="#">Proyecto</a></li>
+            <li><a class="dropdown-item" href="{{ route('proyectos/listar') }}">Proyecto</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">

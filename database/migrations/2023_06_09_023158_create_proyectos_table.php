@@ -18,7 +18,9 @@ return new class extends Migration
             $table->string('fuenteFondos');
             $table->double('montoPlanificado',12,2);
             $table->double('montoPatrocinado',12,2);
-            $table->double('montoFondosPropios',12,2);         
+            $table->double('montoFondosPropios',12,2);
+            $table->timestamp('fecha_creado');    
+            $table->timestamp('fecha_modificado');    
         });
 
         DB::table('proyectos')->insert(
