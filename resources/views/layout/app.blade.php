@@ -44,7 +44,9 @@
   @show
 
   <div class="container">
-    @yield('contenido')       
+    <div class="card mb-4 rounded-3 shadow-sm">
+        @yield('contenido')       
   </div>
+</div>
 </body>
 </html>

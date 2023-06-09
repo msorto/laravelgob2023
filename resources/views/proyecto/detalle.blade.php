@@ -7,29 +7,26 @@
 
 @section('contenido')
 
-<div class="panel-body">
+
  
   @if(Session::has('message'))
     <div class="alert alert-primary" role="alert">
       {{ Session::get('message') }}
     </div>
   @endif 
-           
-    <p class="h5">Nombre:</p>
-    <p class="h6 mb-3">{{ $proyectos->nombreProyecto }}</p>
 
-    <p class="h5">Fuente de Fondos:</p>
-    <p class="h6 mb-3">{{ $proyectos->fuenteFondos }}</p>
-
-    <p class="h5">Monto Planificado:</p>
-    <p class="h6 mb-3">{{ $proyectos->montoPlanificado }}</p> 
-
-    <p class="h5">Monto Patrocinado:</p>
-    <p class="h6 mb-3">{{ $proyectos->montoPatrocinado }}</p> 
-    
-    <p class="h5">Monto Fondos Propios:</p>
-    <p class="h6 mb-3">{{ $proyectos->montoFondosPropios }}</p> 
-    
+  
+   
+    <div class="card-body">
+ 
+      <ul class="list-unstyled mt-3 mb-3">  
+      <li class="">Nombre: <span class="pull-right">{{ $proyectos->nombreProyecto }}</span></li>   
+      <li class="">Fuente de Fondos: <span class="pull-right">{{ $proyectos->fuenteFondos }}</span></li>   
+      <li class="">Monto Planificado: <span class="pull-right">{{ $proyectos->montoPlanificado }}</span></li>   
+      <li class="">Monto Patrocinado: <span class="pull-right">{{ $proyectos->montoPatrocinado }}</span></li>   
+      <li class="">Monto Fondos Propios: <span class="pull-right">{{ $proyectos->montoFondosPropios }}</span></li>   
+    </ul>
 </div>
+
 
 @endsection

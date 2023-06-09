@@ -27,10 +27,12 @@ Route::get('proyectos/crear', 'App\Http\Controllers\ProyectosController@crear')-
 Route::put('proyectos/store', 'App\Http\Controllers\ProyectosController@store')->name('proyectos/store');
  
 /* Leer */ 
-Route::get('proyectos/show/{id}', 'App\Http\Controllers\ProyectosController@show')->name('proyectos/detalles'); 
+Route::get('proyectos/detalle/{id}', 'App\Http\Controllers\ProyectosController@detalle')->name('proyectos/detalles'); 
  
 /* Actualizar */
+//Para desplegar la vista actualizar
 Route::get('proyectos/actualizar/{id}', 'App\Http\Controllers\ProyectosController@actualizar')->name('proyectos/actualizar');
+//Para post del formulario actualizar
 Route::put('proyectos/update/{id}', 'App\Http\Controllers\ProyectosController@update')->name('proyectos/update');
  
 /* Eliminar */
@@ -39,3 +41,5 @@ Route::put('proyectos/eliminar/{id}', 'App\Http\Controllers\ProyectosController@
 /* Vista Principal Proyectos */ 
 Route::get('proyectos/listar', 'App\Http\Controllers\ProyectosController@index')->name('proyectos/listar');
  
+/* Vista de reporte */
+Route::get('proyectos/reporte', 'App\Http\Controllers\ProyectosController@reporte')->name('proyectos/reporte');
